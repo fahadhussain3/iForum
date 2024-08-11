@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
             if ($num==1) {
                         $user = mysqli_fetch_assoc($result);
                         if ($user['password']==$pswrd) {
-                            header("Location: /iForum/home.php?login_success=true");
+                            header("Location: /iForum/iForum/home.php?login_success=true");
                             session_start();
                             $_SESSION['loggedin']=true;
                             $_SESSION['username']=$usrname;
@@ -32,6 +32,6 @@ else {
     $showError="no_dtl";
 }
     
-    header("Location: /iForum/home.php?login_success=$showError");
+    header("Location: /iForum/iForum/home.php?login_success=$showError");
 }
 ?>
