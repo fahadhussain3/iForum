@@ -1,4 +1,4 @@
-# iForum 
+# iForum - Discussion Forum Website
 Description:
 
 iForum is a dynamic discussion forum website designed to facilitate user interaction and content sharing through various discussion categories. The project incorporates a robust set of features aimed at providing a seamless and interactive user experience.
