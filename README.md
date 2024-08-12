@@ -22,4 +22,5 @@ Integrated a carousel feature for enhanced visual presentation.
 Technologies Used:
 
 Programming Languages: PHP, HTML, CSS
+
 Database Management: MySQL
