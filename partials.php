@@ -46,6 +46,7 @@ echo '<nav class="navbar navbar-expand-lg bg-dark border border-white">
         if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true) {
           echo '
           <a href="logout.php"><button type="button" class="btn btn-outline-success mx-1">Logout</button></a>
+          <button type="button" class="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#LoginModal">LogIn</button>
           <button type="button" class="btn btn-outline-success mx-1" data-bs-toggle="modal" data-bs-target="#SignupModal">SignUp</button>';
         }
         else {
@@ -116,7 +117,7 @@ elseif (isset($_GET['login_success']) && $_GET['login_success'] == "password_nt_
 elseif (isset($_GET['login_success']) && $_GET['login_success'] == "account_nt_exist") {
 
   echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                      <strong>Failed!</strong> You do not have any account.
+                      <strong>Failed!</strong> You do not have any account. Please Signup
                       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                   </div>';
 }
